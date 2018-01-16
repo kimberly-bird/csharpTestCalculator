@@ -14,14 +14,17 @@ namespace Calculation
 
     public class Calculator
     {
-        // int properties
-        public int calculator { get; set; }
-        public int sum;
         // method to add two integers to get the sum
-        public int AddTwoIntegers(int x, int y)
+        public int Add(int x, int y)
         {
             int sum = x + y;
             return sum;
+        }
+
+        public int Subtract(int x, int y)
+        {
+            int difference = x - y;
+            return difference;
         }
     }
     

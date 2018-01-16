@@ -17,10 +17,18 @@ namespace Calculation.Tests
         public void AddTwoIntegers()
         {
             // Given this input to the method
-            int sum = _calculator.AddTwoIntegers(54, 29);
+            int sum = _calculator.Add(54, 29);
 
             // We are asserting that the output should be this
             Assert.Equal(83, sum);
+        }
+
+        [Fact]
+        public void SubtractTwoIntegers()
+        {
+            int difference = _calculator.Subtract(54, 29);
+
+            Assert.Equal(25, difference);
         }
     }
 }
